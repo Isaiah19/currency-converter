@@ -29,9 +29,7 @@ def convert_currency(amount, from_currency, to_currency):
 def currency_converter():
     st.title("K6 DevOps Group: Currency Converter Project")
 
-    st.image("C:/Users/ACTNET SYSTEM/Desktop/K6Group_logo-01.jpeg", width=200)
-
-    amount = st.number_input("ENTER AMOUNT:", value=500, step=1)
+    amount = st.number_input("ENTER AMOUNT TO BE CONVERTED:", value=100, step=1)
 
     supported_currencies = fetch_supported_currencies()
 
